@@ -1,0 +1,36 @@
+/* src/components/Projects.css */
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 1rem;
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.project-card {
+  flex: 1;
+  min-width: 25%;
+  background: rgba(214, 239, 105, 0.1);
+  color: rgb(1, 1, 15);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 2px solid rgb(91, 7, 246);
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease-in-out;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: bold;
+}

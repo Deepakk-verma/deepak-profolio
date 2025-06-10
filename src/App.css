@@ -1,0 +1,71 @@
+/* Reset and Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Full-width navbar */
+.navbar {
+  width: 100%;
+  background-color: #007acc;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  border-bottom: 2px solid white;
+}
+
+/* Main Content */
+/* .main-content {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 1rem;
+} */
+
+/* Footer */
+.footer {
+  background-color: #007acc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+   /* max-width: 960px; */
+  margin: 1rem auto; 
+  padding: 1rem; 
+}
+
+/* rest of your styles for navbar and footer */
+
+/* ==================home page styles ================== */
+/* in App.css or global styles */
+/* body {
+  margin: 0;
+  overflow-x: hidden;
+} */
