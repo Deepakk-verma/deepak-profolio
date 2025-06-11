@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body, html, #root {
+ html, #root {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
@@ -69,3 +69,6 @@ body, html, #root {
   margin: 0;
   overflow-x: hidden;
 } */
+/* App.css or Global.css */
+
+
