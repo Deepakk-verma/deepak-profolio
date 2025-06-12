@@ -1,43 +1,68 @@
-/* Reset and Layout */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
- html, #root {
+/* Global */
+html, #root {
   height: 100%;
   width: 100%;
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
+  overflow-x: hidden;
 }
 
-/* Full-width navbar */
+/* Layout Containers */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+/* Navbar */
 .navbar {
   width: 100%;
   background-color: #007acc;
-  padding: 1rem 2rem;
+  padding: 1rem;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
+  overflow-x: auto;
 }
 
 .navbar a {
   color: white;
   font-weight: bold;
   text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  white-space: nowrap;
 }
 
 .navbar a.active {
   border-bottom: 2px solid white;
 }
 
-/* Main Content */
-/* .main-content {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 1rem;
-} */
+/* Keep navbar horizontal and scrollable on mobile */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+
+  .navbar a {
+    flex: 0 0 auto;
+  }
+}
 
 /* Footer */
 .footer {
@@ -47,28 +72,3 @@
   padding: 1rem;
   width: 100%;
 }
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.main-content {
-  flex: 1;
-   /* max-width: 960px; */
-  margin: 1rem auto; 
-  padding: 1rem; 
-}
-
-/* rest of your styles for navbar and footer */
-
-/* ==================home page styles ================== */
-/* in App.css or global styles */
-/* body {
-  margin: 0;
-  overflow-x: hidden;
-} */
-/* App.css or Global.css */
-
-
